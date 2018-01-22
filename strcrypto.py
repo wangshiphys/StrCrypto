@@ -12,6 +12,10 @@ __all__ = [
 ]
 
 
+# The version of this module
+__version__ = "1.0"
+
+
 import base64
 import random
 
@@ -35,7 +39,7 @@ BASE64_ALPHABET = _ASCII_LOWERCASE + _ASCII_UPPERCASE + _DIGITS + "-_"
 
 def _save_to_file(enc_str, key_str, mode, file=None, file1=None):
     if mode.lower() in ('o', "one"):
-        file = file or "result/string_and_key.txt"
+        file = file or "string_and_key.txt"
         with open(file, 'w', encoding=ENCODING) as fp:
             fp.write("string : " + enc_str + '\n')
             fp.write("key : " + key_str + '\n')
@@ -43,8 +47,8 @@ def _save_to_file(enc_str, key_str, mode, file=None, file1=None):
             "The key and encrypted string has been saved to `{}`.".format(file)
         )
     elif mode.lower() in ('s', "separate"):
-        file = file or "result/string.txt"
-        file1 = file1 or "result/key.txt"
+        file = file or "string.txt"
+        file1 = file1 or "key.txt"
         with open(file, 'w', encoding=ENCODING) as fp:
             fp.write("string : " + enc_str + '\n')
         print("The encrypted string has been saved to `{}`.".format(file))

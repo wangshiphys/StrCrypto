@@ -18,10 +18,10 @@ assert dec_str == origin_str
 print(separator)
 
 encrypt(origin_str, mode='one')
-buff = decrypt_from_file("result/string_and_key.txt")
+buff = decrypt_from_file("string_and_key.txt")
 assert buff == origin_str
 print(separator)
 
 encrypt(origin_str, mode='s')
-buff = decrypt_from_file("result/string.txt", "result/key.txt")
+buff = decrypt_from_file("string.txt", "key.txt")
 assert buff == origin_str

@@ -6,10 +6,10 @@ Website: https://github.com/wangshiphys/StrCrypto
 This project contains a `strcrypto` module as well as a test script
 `strcrypto_test.py`
 
-The `strcrypto` module provide implementation of the encryption and
-decryption algorithms
+The `strcrypto` module provides implementation of the encryption and
+decryption algorithm
 
-The `strcrypto_test.py` script provide test as well as usage examples of
+The `strcrypto_test.py` script provides test as well as usage examples of
 the `strcrypto` module
 
 ## Module constants
@@ -22,6 +22,10 @@ The encoding used to convert between strings and bytes
 strcrypto.**BASE64_ALPHABET**
 
 Collection of characters that is used to generate a random string as the *key_str*
+
+strcrypto.\_\_version\_\_
+
+strcrypto version string
 
 ## Module functions
 
