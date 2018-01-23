@@ -16,8 +16,8 @@ setup_params = dict(
     keywords="python, encrypt, decrypt, string",
     url="https://github.com/wangshiphys/StrCrypto",
     python_requires=">=3.6",
-    scripts=[
-        "strcrypto.py",
+    py_modules=[
+        "strcrypto",
     ],
 )
 

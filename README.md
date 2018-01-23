@@ -23,7 +23,7 @@ strcrypto.**BASE64_ALPHABET**
 
 Collection of characters that is used to generate a random string as the *key_str*
 
-strcrypto.\_\_version\_\_
+strcrypto.**\_\_version\_\_**
 
 strcrypto version string
 
